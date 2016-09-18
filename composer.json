@@ -1,0 +1,16 @@
+{
+    "name": "madrakio/easy-api-authentication-bundle",
+    "description": "Easy API Authentication Bundle: An easy way to get your API up and running with key based application authentication",
+    "homepage": "https://github.com/madrakio/easy-api-authentication-bundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.9",
+        "symfony/symfony": ">=2.8.0",
+        "ramsey/uuid": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "MadrakIO\\Bundle\\EasyApiAuthenticationBundle\\": ""
+        }
+    }
+}

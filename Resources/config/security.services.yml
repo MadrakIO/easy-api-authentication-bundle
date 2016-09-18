@@ -1,0 +1,6 @@
+services:
+    madrakio.easy_api_authentication.security.authentication.provider:
+        class:  MadrakIO\Bundle\EasyApiAuthenticationBundle\Security\Authentication\Provider\ApiProvider
+    madrakio.easy_api_authentication.security.authentication.listener:
+        class:  MadrakIO\Bundle\EasyApiAuthenticationBundle\Security\Firewall\ApiListener
+        arguments: ["@security.token_storage", "@security.authentication.manager", "@doctrine.orm.default_entity_manager", "%madrak_io_easy_api_authentication.application_class%"]
